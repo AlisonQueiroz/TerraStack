@@ -1,0 +1,30 @@
+# TerraStack configuration
+
+# Language of the messages. Built-in: en, pt_BR.
+# Any key under "messages" below overrides the built-in text for that key.
+language: en
+
+# Default search radius in blocks when /qs is used without a number. Max: max-radius.
+radius: 16
+max-radius: 32
+
+# Only deposit into containers the player could open themselves.
+# A simulated right-click is sent to protection plugins (WorldGuard, GriefPrevention,
+# Lands, Towny, Bolt, ...) and containers they deny are skipped.
+respect-protection: true
+
+# Also deposit into placed shulker boxes.
+include-shulker-boxes: false
+
+# Flying item animation from the player to each chest.
+animation:
+  enabled: true
+  # Duration of each flight in ticks (20 ticks = 1 second).
+  flight-ticks: 8
+  # Max number of flying items shown per /qs (deposit still happens for all items).
+  max-items: 24
+
+# Optional per-key message overrides (use & for colors). Example:
+# messages:
+#   prefix: "&7[&bQS&7] "
+messages: {}

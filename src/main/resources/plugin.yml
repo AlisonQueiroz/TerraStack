@@ -1,0 +1,23 @@
+name: TerraStack
+version: '${project.version}'
+main: io.github.alisonqueiroz.terrastack.TerraStack
+api-version: '1.20'
+description: Terraria-style quick stack - deposits your inventory into nearby chests that already hold the same item.
+author: AlisonQueiroz
+website: https://github.com/AlisonQueiroz/TerraStack
+folia-supported: false
+commands:
+  qs:
+    description: "Quick stack: deposits your inventory (not the hotbar or armor) into nearby chests that already hold the same item. /qs [radius] | /qs keep <item|hand> [amount|all] | /qs keep | /qs reload"
+    usage: "/qs [radius]  |  /qs keep <item|hand> [amount|all]  |  /qs keep"
+    aliases: [quickstack, terrastack]
+permissions:
+  terrastack.use:
+    description: Use /qs and /qs keep
+    default: true
+  terrastack.admin:
+    description: Use /qs reload
+    default: op
+  terrastack.bypass-protection:
+    description: Deposit into containers even when a protection plugin would deny opening them
+    default: false
