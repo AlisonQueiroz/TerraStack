@@ -65,7 +65,7 @@ or give trusted staff `terrastack.bypass-protection`.
 
 ## Requirements
 
-- Paper (or a fork such as Purpur) 1.21+ / 26.x, Java 21+
+- Paper (or a fork such as Purpur) 1.21+ / 26.x (bytecode targets Java 21; building needs JDK 25 because paper-api 26.x is compiled for it)
 - Not Folia-compatible yet
 
 ## Building
